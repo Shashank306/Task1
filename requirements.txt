@@ -1,7 +1,6 @@
---prefer-binary
-pandas==2.1.4
+pandas
 scikit-learn==1.6.1
-numpy==1.26.4
-fastapi==0.110.2
-uvicorn==0.29.0
+numpy
+fastapi==0.115.8
+uvicorn==0.34.0
 joblib==1.4.2
