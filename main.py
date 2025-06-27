@@ -5,19 +5,8 @@ import numpy as np
 import pickle
 
 # Load model
-with open("watch_accuracy_model.pkl", "rb") as f:
-    model = pickle.load(f)
-
-# Load preprocessor
-with open("column_transformer.pkl", "rb") as f:
-    preprocessor = pickle.load(f)
-
-# Load feature names
-with open("num_features.pkl", "rb") as f:
-    num_features = pickle.load(f)
-
-with open("cat_features.pkl", "rb") as f:
-    cat_features = pickle.load(f)
+preprocessor = joblib.load('column_transformer.pkl')
+model = joblib.load('watch_accuracy_model.pkl')
 
 # Define expected input data model
 class WatchInput(BaseModel):
